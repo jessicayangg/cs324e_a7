@@ -1,0 +1,24 @@
+Project Description: "Classic Blackjack"
+
+Overview:
+This project presents a digital version of Blackjack, the well-known casino card game, realized through the Processing programming language. Players aim to amass a hand of cards with a total value closer to 21 than the dealer's hand, without exceeding 21. The game is interactive, with simple mouse-clicks enabling the player to 'hit,' 'stand,' or initiate a 'new game.' The user can also turn audio on/off with a mouse click.
+
+Game Rules and Conditions:
+
+The game utilizes a standard deck where face cards (Jack, Queen, King) are valued at 10 points, and all other cards are worth their numerical value, with Aces permanently valued at 1 point.
+In this version, players receive their cards one at a time instead of starting with two. This change adds a layer of strategy as players must decide their next move with less initial information.
+The player can 'hit' to draw additional cards to increase their hand value or 'stand' to halt their turn.
+If the player's total hand value surpasses 21 ('busts'), they lose the round automatically.
+After the player stands, the dealer reveals their hand. The dealer must 'hit' on a hand value of 16 or lower and 'stand' on a value of 17 or higher.
+The round concludes when the player stands or busts. The game then settles the dealer's hand and displays the result of the round.
+Development and Contributions:
+
+Aayush established the game's foundation, designing the green felt of the game board and the initial card distribution logic. He also implemented interactive buttons for drawing cards and starting new rounds.
+Jessica built upon Aayush's initial setup, integrating the dealer's hand mechanics. She refined the button operations, ensuring they remained active throughout different game phases. Jessica also added a scoreboard feature to track the number of games played and audio integration.
+Krishna introduced the core gameplay logic, developing the 'hit' and 'stand' functions. He improved the game's interface, particularly how the cards and dealer's actions are revealed, adding an engaging visual element. Krishna was also responsible for the on-screen messages that update players on the status of the game.
+
+Challenges:
+
+A significant challenge was to simplify the game mechanics, particularly deciding to keep the Ace's value fixed at 1. This decision streamlined the gameplay and removed the necessity for additional logic and user input, which would have been required if players were given the choice of valuing the Ace as 1 or 11.
+
+Another challenge is that since our card value and suit are randomized throughout each draw, there is the rare possibility of drawing duplicates of the same card in one deck. In most blackjack games, this would not be possible since there are only 52 total cards. For the purpose of the game, we made the decision that the cards could be drawn from multiple decks, a tactic used by some casinos. Therefore, it is possible to draw the same card many times.
